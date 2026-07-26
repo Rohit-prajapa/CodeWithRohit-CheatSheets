@@ -1,0 +1,851 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- =====================================================
+         BASIC META
+    ====================================================== -->
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="CodeWithRohit provides free programming, web development, database, developer tools and Computer Science cheat sheets for students and developers."
+    />
+
+    <meta
+      name="keywords"
+      content="CodeWithRohit, programming cheat sheets, HTML cheat sheet, CSS cheat sheet, JavaScript cheat sheet, Python cheat sheet, Java cheat sheet, C cheat sheet, C++ cheat sheet, React cheat sheet, Node.js, DSA, DBMS, OOPs, Operating System, Computer Networks"
+    />
+
+    <meta name="author" content="CodeWithRohit" />
+
+    <meta name="robots" content="index, follow" />
+
+    <meta name="theme-color" content="#080d17" />
+
+    <!-- =====================================================
+         OPEN GRAPH
+    ====================================================== -->
+
+    <meta
+      property="og:title"
+      content="CodeWithRohit | Programming Cheat Sheets"
+    />
+
+    <meta
+      property="og:description"
+      content="Quick reference programming and Computer Science cheat sheets for learning, revision and interview preparation."
+    />
+
+    <meta property="og:type" content="website" />
+
+    <!-- =====================================================
+         TITLE
+    ====================================================== -->
+
+    <title>CodeWithRohit | Programming Cheat Sheets</title>
+
+    <!-- =====================================================
+         FAVICON
+
+         Create:
+         images/favicon.png
+    ====================================================== -->
+
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+
+    <!-- =====================================================
+         MAIN CSS
+    ====================================================== -->
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
+
+    <nav class="navbar">
+      <!-- Logo -->
+
+      <a href="#home" class="logo" aria-label="CodeWithRohit Home">
+        &lt;/&gt;
+        <span>CodeWithRohit</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+
+      <ul class="nav-links" id="navLinks">
+        <li>
+          <a href="#home" class="active"> Home </a>
+        </li>
+
+        <li>
+          <a href="#cheatsheets"> Cheat Sheets </a>
+        </li>
+
+        <li>
+          <a href="#about"> About </a>
+        </li>
+
+        <li>
+          <a href="#contact"> Contact </a>
+        </li>
+      </ul>
+
+      <!-- Navbar Actions -->
+
+      <div class="nav-actions">
+        <!-- =============================================
+                 STEP 34 - THEME BUTTON
+            ============================================== -->
+
+        <button
+          class="theme-toggle"
+          id="themeToggle"
+          type="button"
+          aria-label="Switch theme"
+          title="Change theme"
+        >
+          <span id="themeIcon"> 🌙 </span>
+        </button>
+
+        <!-- =============================================
+                 MOBILE HAMBURGER
+            ============================================== -->
+
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="navLinks"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+
+    <header class="hero" id="home">
+      <div class="hero-content">
+        <p class="hero-small">LEARN • CODE • PRACTICE • REVISE</p>
+
+        <h1>
+          Programming
+          <span>Cheat Sheets</span>
+        </h1>
+
+        <p class="hero-description">
+          Quick reference guides for programming languages, web development,
+          databases, developer tools and core Computer Science subjects.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#cheatsheets" class="hero-btn"> Explore Cheat Sheets ↓ </a>
+
+          <a href="#about" class="hero-btn secondary-btn"> About Project </a>
+        </div>
+
+        <!-- Stats -->
+
+        <div class="hero-stats">
+          <div class="stat">
+            <strong>24+</strong>
+            <span>Cheat Sheets</span>
+          </div>
+
+          <div class="stat">
+            <strong>100%</strong>
+            <span>Free</span>
+          </div>
+
+          <div class="stat">
+            <strong>Quick</strong>
+            <span>Revision</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
+
+    <main>
+      <!-- =================================================
+             CHEAT SHEETS
+        ================================================== -->
+
+      <section class="cheatsheet-section" id="cheatsheets">
+        <div class="section-heading">
+          <p class="section-small">QUICK REFERENCE</p>
+
+          <h2>Cheat Sheets</h2>
+
+          <p>Choose a topic and start learning.</p>
+
+          <!-- =========================================
+                     STEP 33 - CATEGORY FILTERS
+                ========================================== -->
+
+          <div class="filter-container">
+            <button class="filter-btn active" data-filter="all" type="button">
+              All
+            </button>
+
+            <button class="filter-btn" data-filter="language" type="button">
+              Languages
+            </button>
+
+            <button class="filter-btn" data-filter="web" type="button">
+              Web Development
+            </button>
+
+            <button class="filter-btn" data-filter="database" type="button">
+              Database
+            </button>
+
+            <button class="filter-btn" data-filter="cs" type="button">
+              CS Core
+            </button>
+
+            <button class="filter-btn" data-filter="tools" type="button">
+              Tools
+            </button>
+          </div>
+
+          <!--
+                    Search box is automatically
+                    generated by script.js
+                -->
+        </div>
+
+        <!-- =================================================
+                 CARDS
+            ================================================== -->
+
+        <div class="card-container">
+          <!-- ================= HTML ================= -->
+
+          <article class="card" data-category="web">
+            <img
+              src="images/html.png"
+              alt="HTML logo"
+              class="card-img"
+              loading="lazy"
+            />
+
+            <h3>HTML</h3>
+
+            <p>
+              Tags, forms, tables, semantic HTML, media and important HTML
+              elements.
+            </p>
+
+            <a href="cheatsheets/html.html" class="card-btn">
+              View Cheat Sheet →
+            </a>
+          </article>
+
+          <!-- ================= CSS ================= -->
+
+          <article class="card" data-category="web">
+            <img
+              src="images/css.png"
+              alt="CSS logo"
+              class="card-img"
+              loading="lazy"
+            />
+
+            <h3>CSS</h3>
+
+            <p>
+              Selectors, box model, Flexbox, Grid, animations and responsive
+              design.
+            </p>
+
+            <a href="cheatsheets/css.html" class="card-btn">
+              View Cheat Sheet →
+            </a>
+          </article>
+
+          <!-- ================= JAVASCRIPT ================= -->
+
+          <article class="card" data-category="language web">
+            <img
+              src="images/javascript.jpg"
+              alt="JavaScript logo"
+              class="card-img"
+              loading="lazy"
+            />
+
+            <h3>JavaScript</h3>
+
+            <p>
+              Variables, functions, arrays, objects, DOM, events and async
+              JavaScript.
+            </p>
+
+            <a href="cheatsheets/javascript.html" class="card-btn">
+              View Cheat Sheet →
+            </a>
+          </article>
+
+          <!-- ================= PYTHON ================= -->
+
+          <article class="card" data-category="language">
+            <img
+              src="images/python.png"
+              alt="Python logo"
+              class="card-img"
+              loading="lazy"
+            />
+
+            <h3>Python</h3>
+
+            <p>
+              Syntax, data types, loops, functions, OOP, modules and exceptions.
+            </p>
+
+            <a href="cheatsheets/python.html" class="card-btn">
+              View Cheat Sheet →
+            </a>
+          </article>
+
+          <!-- ================= C ================= -->
+
+          <article class="card" data-category="language">
+            <img
+              src="images/C.png"
+              alt="C programming logo"
+              class="card-img"
+              loading="lazy"
+            />
+
+            <h3>C Programming</h3>
+
+            <p>
+              Syntax, loops, arrays, pointers, functions, structures and files.
+            </p>
+
+            <a href="cheatsheets/c.html" class="card-btn">
+              View Cheat Sheet →
+            </a>
+          </article>
+
+          <!-- ================= C++ ================= -->
+
+          <article class="card" data-category="language">
+            <img
+              src="images/CPP.png"
+              alt="C++ logo"
+              class="card-img"
+              loading="lazy"
+            />
+
+            <h3>C++</h3>
+
+            <p>C++ syntax, OOP, STL, templates, classes and inheritance.</p>
+
+            <a href="cheatsheets/cpp.html" class="card-btn">
+              View Cheat Sheet →
+            </a>
+          </article>
+
+          <!-- ================= JAVA ================= -->
+
+          <article class="card" data-category="language">
+            <img
+              src="images/Java.png"
+              alt="Java logo"
+              class="card-img"
+              loading="lazy"
+            />
+
+            <h3>Java</h3>
+
+            <p>Java syntax, OOP, collections, exceptions and multithreading.</p>
+
+            <a href="cheatsheets/java.html" class="card-btn">
+              View Cheat Sheet →
+            </a>
+          </article>
+
+          <!-- ================= TYPESCRIPT ================= -->
+
+          <article class="card" data-category="language web">
+            <img
+              src="images/typescript.png"
+              alt="TypeScript logo"
+              class="card-img"
+              loading="lazy"
+            />
+
+            <h3>TypeScript</h3>
+
+            <p>
+              Types, interfaces, generics, functions and TypeScript essentials.
+            </p>
+
+            <a href="cheatsheets/typescript.html" class="card-btn">
+              View Cheat Sheet →
+            </a>
+          </article>
+
+          <!-- ================= REACT ================= -->
+
+          <article class="card" data-category="web">
+            <img
+              src="images/React.png"
+              alt="React logo"
+              class="card-img"
+              loading="lazy"
+            />
+
+            <h3>React</h3>
+
+            <p>Components, JSX, props, state, hooks and events.</p>
+
+            <a href="cheatsheets/react.html" class="card-btn">
+              View Cheat Sheet →
+            </a>
+          </article>
+
+          <!-- ================= NODE ================= -->
+
+          <article class="card" data-category="web">
+            <img
+              src="images/node.png"
+              alt="Node.js logo"
+              class="card-img"
+              loading="lazy"
+            />
+
+            <h3>Node.js</h3>
+
+            <p>Modules, npm, file system, events and backend development.</p>
+
+            <a href="cheatsheets/node.html" class="card-btn">
+              View Cheat Sheet →
+            </a>
+          </article>
+
+          <!-- ================= EXPRESS ================= -->
+
+          <article class="card" data-category="web">
+            <img
+              src="images/ExpressJs.png"
+              alt="Express.js logo"
+              class="card-img"
+              loading="lazy"
+            />
+
+            <h3>Express.js</h3>
+
+            <p>Routing, middleware, REST APIs and backend development.</p>
+
+            <a href="cheatsheets/express.html" class="card-btn">
+              View Cheat Sheet →
+            </a>
+          </article>
+
+          <!-- ================= TAILWIND ================= -->
+
+          <article class="card" data-category="web">
+            <img
+              src="images/tailwindCSS.webp"
+              alt="Tailwind CSS logo"
+              class="card-img"
+              loading="lazy"
+            />
+
+            <h3>Tailwind CSS</h3>
+
+            <p>Utility classes, layouts, spacing and responsive design.</p>
+
+            <a href="cheatsheets/tailwindCSS.html" class="card-btn">
+              View Cheat Sheet →
+            </a>
+          </article>
+
+          <!-- ================= HTTP/API ================= -->
+
+          <article class="card" data-category="web">
+            <img
+              src="images/api-management.png"
+              alt="HTTP and REST API"
+              class="card-img"
+              loading="lazy"
+            />
+
+            <h3>HTTP & REST API</h3>
+
+            <p>
+              HTTP methods, status codes, headers, JSON and REST principles.
+            </p>
+
+            <a href="cheatsheets/api.html" class="card-btn">
+              View Cheat Sheet →
+            </a>
+          </article>
+
+          <!-- ================= MYSQL ================= -->
+
+          <article class="card" data-category="database">
+            <img
+              src="images/MySql.jpg"
+              alt="MySQL logo"
+              class="card-img"
+              loading="lazy"
+            />
+
+            <h3>MySQL</h3>
+
+            <p>Tables, queries, joins, constraints and database operations.</p>
+
+            <a href="cheatsheets/mysql.html" class="card-btn">
+              View Cheat Sheet →
+            </a>
+          </article>
+
+          <!-- ================= MONGODB ================= -->
+
+          <article class="card" data-category="database">
+            <img
+              src="images/MongoDB.png"
+              alt="MongoDB logo"
+              class="card-img"
+              loading="lazy"
+            />
+
+            <h3>MongoDB</h3>
+
+            <p>Collections, documents, CRUD operations and aggregation.</p>
+
+            <a href="cheatsheets/mongodb.html" class="card-btn">
+              View Cheat Sheet →
+            </a>
+          </article>
+
+          <!-- ================= SQL ================= -->
+
+          <article class="card" data-category="database">
+            <img
+              src="images/sql.png"
+              alt="SQL logo"
+              class="card-img"
+              loading="lazy"
+            />
+
+            <h3>SQL</h3>
+
+            <p>SELECT, INSERT, UPDATE, DELETE, joins and subqueries.</p>
+
+            <a href="cheatsheets/sql.html" class="card-btn">
+              View Cheat Sheet →
+            </a>
+          </article>
+
+          <!-- ================= DBMS ================= -->
+
+          <article class="card" data-category="database cs">
+            <img
+              src="images/DBMS.png"
+              alt="DBMS"
+              class="card-img"
+              loading="lazy"
+            />
+
+            <h3>DBMS</h3>
+
+            <p>Keys, normalization, transactions, ACID and indexing.</p>
+
+            <a href="cheatsheets/dbms.html" class="card-btn">
+              View Cheat Sheet →
+            </a>
+          </article>
+
+          <!-- ================= DSA ================= -->
+
+          <article class="card" data-category="cs">
+            <img
+              src="images/DSA.jpg"
+              alt="Data Structures and Algorithms"
+              class="card-img"
+              loading="lazy"
+            />
+
+            <h3>Data Structures & Algorithms</h3>
+
+            <p>
+              Arrays, linked lists, stacks, queues, trees, graphs and
+              algorithms.
+            </p>
+
+            <a href="cheatsheets/dsa.html" class="card-btn">
+              View Cheat Sheet →
+            </a>
+          </article>
+
+          <!-- ================= OOPS ================= -->
+
+          <article class="card" data-category="cs">
+            <img
+              src="images/OOPS.jpg"
+              alt="Object Oriented Programming"
+              class="card-img"
+              loading="lazy"
+            />
+
+            <h3>OOPs</h3>
+
+            <p>
+              Classes, objects, inheritance, polymorphism, abstraction and
+              encapsulation.
+            </p>
+
+            <a href="cheatsheets/oops.html" class="card-btn">
+              View Cheat Sheet →
+            </a>
+          </article>
+
+          <!-- ================= OS ================= -->
+
+          <article class="card" data-category="cs">
+            <img
+              src="images/OS.jpg"
+              alt="Operating System"
+              class="card-img"
+              loading="lazy"
+            />
+
+            <h3>Operating System</h3>
+
+            <p>
+              Processes, scheduling, deadlocks, threads and memory management.
+            </p>
+
+            <a href="cheatsheets/os.html" class="card-btn">
+              View Cheat Sheet →
+            </a>
+          </article>
+
+          <!-- ================= CN ================= -->
+
+          <article class="card" data-category="cs">
+            <img
+              src="images/CN.jpg"
+              alt="Computer Networks"
+              class="card-img"
+              loading="lazy"
+            />
+
+            <h3>Computer Networks</h3>
+
+            <p>OSI, TCP/IP, DNS, IP addressing, protocols and routing.</p>
+
+            <a href="cheatsheets/cn.html" class="card-btn">
+              View Cheat Sheet →
+            </a>
+          </article>
+
+          <!-- ================= GIT ================= -->
+
+          <article class="card" data-category="tools">
+            <img
+              src="images/Git.png"
+              alt="Git logo"
+              class="card-img"
+              loading="lazy"
+            />
+
+            <h3>Git & GitHub</h3>
+
+            <p>Commits, branches, merge, push, pull and repository workflow.</p>
+
+            <a href="cheatsheets/git.html" class="card-btn">
+              View Cheat Sheet →
+            </a>
+          </article>
+
+          <!-- ================= LINUX ================= -->
+
+          <article class="card" data-category="tools">
+            <img
+              src="images/Linux.png"
+              alt="Linux logo"
+              class="card-img"
+              loading="lazy"
+            />
+
+            <h3>Linux Commands</h3>
+
+            <p>
+              Files, directories, permissions, processes and terminal commands.
+            </p>
+
+            <a href="cheatsheets/linux.html" class="card-btn">
+              View Cheat Sheet →
+            </a>
+          </article>
+
+          <!-- ================= VS CODE ================= -->
+
+          <article class="card" data-category="tools">
+            <img
+              src="images/VS-Code.png"
+              alt="Visual Studio Code logo"
+              class="card-img"
+              loading="lazy"
+            />
+
+            <h3>VS Code Shortcuts</h3>
+
+            <p>
+              Essential keyboard shortcuts for faster coding and development.
+            </p>
+
+            <a href="cheatsheets/vscode.html" class="card-btn">
+              View Cheat Sheet →
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <!-- =================================================
+             ABOUT
+        ================================================== -->
+
+      <section class="about-section" id="about">
+        <div class="about-content">
+          <p class="section-small">ABOUT THE PROJECT</p>
+
+          <h2>Learn Faster. Revise Smarter.</h2>
+
+          <p>
+            CodeWithRohit is a collection of programming and Computer Science
+            cheat sheets designed to help students and developers quickly learn,
+            revise concepts and prepare for technical interviews.
+          </p>
+
+          <div class="about-features">
+            <div class="about-feature">
+              <span>⚡</span>
+
+              <h3>Quick Revision</h3>
+
+              <p>Important concepts in one easy place.</p>
+            </div>
+
+            <div class="about-feature">
+              <span>💻</span>
+
+              <h3>Code Examples</h3>
+
+              <p>Simple examples with syntax highlighting.</p>
+            </div>
+
+            <div class="about-feature">
+              <span>🎯</span>
+
+              <h3>Interview Prep</h3>
+
+              <p>Core CS topics for placement preparation.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================================================
+             CONTACT
+        ================================================== -->
+
+      <section class="contact-section" id="contact">
+        <div class="contact-content">
+          <p class="section-small">CONNECT</p>
+
+          <h2>Connect With CodeWithRohit</h2>
+
+          <p>Follow the project, explore the source code and stay connected.</p>
+
+          <div class="contact-buttons">
+            <a
+              href="https://github.com/Rohit-prajapa"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-btn"
+            >
+              GitHub
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/rohit-prajapati-38b1762a2/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-btn"
+            >
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>&lt;/&gt; CodeWithRohit</h3>
+
+          <p>Learn • Code • Practice • Revise</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="#home"> Home </a>
+
+          <a href="#cheatsheets"> Cheat Sheets </a>
+
+          <a href="#about"> About </a>
+
+          <a href="#contact"> Contact </a>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 CodeWithRohit. All Rights Reserved.</p>
+
+          <p>Built with HTML, CSS & JavaScript</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- =====================================================
+         NOSCRIPT
+    ====================================================== -->
+
+    <noscript>
+      <p class="noscript-message">
+        JavaScript is disabled in your browser. Some features such as search,
+        filters and theme switching may not work.
+      </p>
+    </noscript>
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
